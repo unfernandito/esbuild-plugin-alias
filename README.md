@@ -39,6 +39,16 @@ esbuild.build({
 **Note:** esbuild requires resolved paths to be absolute. So, make sure that values in plugin's config object are
 absolute paths.
 
+If you need to find a path to an installed dep, you may use `require.resolve`. E.g.:
+
+```js
+alias({
+  'react-dom': process.env.NODE_ENV === 'dev' 
+    ? require.resolve('@hot-loader/react-dom')
+    : require.resolve('react-dom'),
+}),
+```
+
 
 ## Example
 
