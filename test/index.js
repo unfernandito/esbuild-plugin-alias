@@ -10,7 +10,7 @@ const resolvePath = x => path.resolve(__dirname, x);
 
 describe('Main tests', () => {
   it('should work with strings', done => {
-    const output = fs.readFileSync(path.resolve(__dirname, 'fixtures/output.js'), 'utf-8');
+    const output = fs.readFileSync(resolvePath('fixtures/output.js'), 'utf-8');
 
     esbuild.build({
       entryPoints: [resolvePath('fixtures/input.js')],
