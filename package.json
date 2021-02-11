@@ -4,7 +4,7 @@
   "description": "esbuild plugin for path aliases",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/igoradamenko/esbuild-plugin-alias/issues"
   },
-  "homepage": "https://github.com/igoradamenko/esbuild-plugin-alias#readme"
+  "homepage": "https://github.com/igoradamenko/esbuild-plugin-alias#readme",
+  "devDependencies": {
+    "esbuild": "0.8.44",
+    "mocha": "8.2.1"
+  }
 }
