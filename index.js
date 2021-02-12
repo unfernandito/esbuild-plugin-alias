@@ -5,7 +5,9 @@ module.exports = options => {
   return {
     name: 'alias',
     setup(build) {
-      build.onResolve({ filter: re, namespace: 'file' }, args => ({
+      // we do not register 'file' namespace here, because the root file won't be processed
+      // https://github.com/evanw/esbuild/issues/791
+      build.onResolve({ filter: re }, args => ({
         path: options[args.path],
       }));
     },
