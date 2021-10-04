@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0 (04.10.2021)
+
+Added TS definition file.
+
+
 ## 0.1.2 (12.02.2021)
 
 Fixed the behavior when plugin didn't work with entrypoints. 

@@ -1,6 +1,6 @@
 {
   "name": "esbuild-plugin-alias",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "esbuild plugin for path aliases",
   "main": "index.js",
   "scripts": {
