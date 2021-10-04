@@ -4,6 +4,7 @@
   "description": "esbuild plugin for path aliases",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon --exec 'npm run test' --watch index.js --watch tests",
     "test": "mocha",
     "lint": "eslint ."
   },
@@ -31,7 +32,8 @@
     "eslint": "7.19.0",
     "husky": "4.3.8",
     "lint-staged": "10.5.4",
-    "mocha": "8.2.1"
+    "mocha": "8.2.1",
+    "nodemon": "2.0.13"
   },
   "husky": {
     "hooks": {
