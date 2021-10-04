@@ -1,6 +1,6 @@
 module.exports = options => {
   const aliases = Object.keys(options);
-  const re = new RegExp(`^${aliases.map(x => escapeRegExp(x)).join('|')}$`);
+  const re = new RegExp(`^(${aliases.map(x => escapeRegExp(x)).join('|')})$`);
 
   return {
     name: 'alias',
