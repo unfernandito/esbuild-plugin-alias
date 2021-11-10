@@ -3,13 +3,15 @@
   "version": "0.2.0",
   "description": "esbuild plugin for path aliases",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "dev": "nodemon --exec 'npm run test' --watch index.js --watch tests",
     "test": "mocha",
     "lint": "eslint ."
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "repository": {
     "type": "git",
