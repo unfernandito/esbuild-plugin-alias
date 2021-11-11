@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1 (11.11.2021)
+
+Fixed TS definitions export.
+
+
 ## 0.2.0 (04.10.2021)
 
 Added TS definition file.
