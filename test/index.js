@@ -24,7 +24,6 @@ describe('Main tests', () => {
         write: false,
       })
       .then((res) => {
-        console.log(res.outputFiles[0].text);
         done(assert.deepStrictEqual(res.outputFiles[0].text, output));
       })
       .catch((err) => {
